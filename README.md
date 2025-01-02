@@ -6,18 +6,18 @@ This project is designed to provide nearly live updates on weather conditions su
 ## Project Flow
 - Azure Functions fetch weather data from weatherapi.com every 30 seconds.
 - The data is sent to Azure Event Hubs.
-- Azure Stream Analytics processes the data in real-time.
+- Azure Stream Analytics processes the data in real time.
 - Power BI visualizes the processed data on interactive dashboards.
 
 ## Technologies Used
-- Prgramming Language: Python
+- Programming Language: Python
 - Cloud: Azure
 - Azure Service: Azure Function, Azure Eventhubs, Azure Stream Analytics, Azure Key Vault, PowerBI
 
 ## Architecture
 
-**Stream Analytics Pipeline**
-![streamAnalytics-pipeline](https://github.com/user-attachments/assets/886625f9-f1ba-4bbd-bee5-f9eb4600632b)
+**Project Architecture Diagram**
+![WeatherStreaming](https://github.com/user-attachments/assets/8170ddab-fd7d-4261-8019-0b7197e4ce12)
 
 1. **Azure Functions**
     - Purpose: To fetch weather details from [weatherapi.com](https://www.weatherapi.com/) every 30 seconds.
@@ -38,6 +38,9 @@ This project is designed to provide nearly live updates on weather conditions su
         - Reads data from Azure Event Hubs.
         - Performs transformations and computations on the incoming data.
         - Sends the processed data to Power BI for visualization.
+          
+        **Stream Analytics Pipeline**
+        ![streamAnalytics-pipeline](https://github.com/user-attachments/assets/886625f9-f1ba-4bbd-bee5-f9eb4600632b)
         
 4. **Azure Key Vault**
     - purpose: To store the API Key/secret creds
