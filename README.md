@@ -16,7 +16,7 @@ This project is designed to provide nearly live updates on weather conditions su
 
 ## Architecture
 
-****Stream Analytics Pipeline****
+**Stream Analytics Pipeline**
 ![streamAnalytics-pipeline](https://github.com/user-attachments/assets/886625f9-f1ba-4bbd-bee5-f9eb4600632b)
 
 1. **Azure Functions**
@@ -38,6 +38,9 @@ This project is designed to provide nearly live updates on weather conditions su
       - Reads data from Azure Event Hubs.
       - Performs transformations and computations on the incoming data.
       - Sends the processed data to Power BI for visualization.
+        
+4. **Azure Key Vault**
+   - purpose: To store the API Key/secret creds
         
 4. **Power BI**
   - Purpose: Provides an interactive dashboard for visualizing the live weather data.
