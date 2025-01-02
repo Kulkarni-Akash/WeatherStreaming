@@ -16,7 +16,7 @@ This project is designed to provide nearly live updates on weather conditions su
 
 ## Architecture
 
-Stream Analytics Pipeline
+***Stream Analytics Pipeline***
 ![streamAnalytics-pipeline](https://github.com/user-attachments/assets/886625f9-f1ba-4bbd-bee5-f9eb4600632b)
 
 1. **Azure Functions**
