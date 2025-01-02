@@ -43,7 +43,7 @@ This project is designed to provide nearly live updates on weather conditions su
         ![streamAnalytics-pipeline](https://github.com/user-attachments/assets/886625f9-f1ba-4bbd-bee5-f9eb4600632b)
         
 4. **Azure Key Vault**
-    - purpose: To store the API Key/secret creds
+    - Purpose: To store the API Key/secret creds
         
 4. **Power BI**
     - Purpose: Provides an interactive dashboard for visualizing the live weather data.
