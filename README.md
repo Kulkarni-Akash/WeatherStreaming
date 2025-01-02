@@ -18,7 +18,7 @@ This project is designed to provide nearly live updates on weather conditions su
 
 
 1. **Azure Functions**
-  - Purpose: To fetch weather details from [weatherapi.com](weatherapi.com) every 30 seconds.
+  - Purpose: To fetch weather details from [weatherapi.com](https://www.weatherapi.com/) every 30 seconds.
   - Process:
       - The Azure Function is triggered on a timer (every 30 seconds).
       - It retrieves the weather data from the API.
@@ -45,12 +45,12 @@ This project is designed to provide nearly live updates on weather conditions su
 
 ## How to Run
 - Clone this repository.
-- Set up an Azure Function to fetch data from [weatherapi.com](weatherapi.com).
+- Set up an Azure Function to fetch data from [weatherapi.com](https://www.weatherapi.com/).
 - Configure Azure Event Hubs to receive the data.
 - Create a Stream Analytics job to process the data and send it to Power BI.
 - Use Power BI to design and publish a dashboard for visualization.
 
 ## Prerequisites
 - Azure Subscription
-- API key from [weatherapi.com](weatherapi.com)
+- API key from [weatherapi.com](https://www.weatherapi.com/)
 - Power BI account
