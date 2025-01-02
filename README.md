@@ -40,5 +40,17 @@ This project is designed to provide nearly live updates on weather conditions su
 4. **Power BI**
   - Purpose: Provides an interactive dashboard for visualizing the live weather data.
   - Process:
-      - Displays metrics such as temperature, humidity, wind speed, and direction.
+      - Displays all the metrics related to weather(temp, humidity, windspeed, wind direction, feels_like, and so on...)
       - Automatically refreshes to reflect the latest data.
+
+## How to Run
+- Clone this repository.
+- Set up an Azure Function to fetch data from [weatherapi.com](weatherapi.com).
+- Configure Azure Event Hubs to receive the data.
+- Create a Stream Analytics job to process the data and send it to Power BI.
+- Use Power BI to design and publish a dashboard for visualization.
+
+## Prerequisites
+- Azure Subscription
+- API key from [weatherapi.com](weatherapi.com)
+- Power BI account
