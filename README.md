@@ -1,4 +1,4 @@
-# WeatherStreaming
+# WeatherStreaming-DataEngineering-Project
 
 ## Overview
 This project is designed to provide nearly live updates on weather conditions such as temperature, humidity, wind direction, wind speed, and more. By leveraging Azure services, the system fetches weather data from an API and processes it in real-time, displaying the information in Power BI dashboards.
