@@ -1,1 +1,44 @@
 # WeatherStreaming
+
+## Overview
+This project is designed to provide nearly live updates on weather conditions such as temperature, humidity, wind direction, wind speed, and more. By leveraging Azure services, the system fetches weather data from an API and processes it in real-time, displaying the information in Power BI dashboards.
+
+## Project Flow
+- Azure Functions fetch weather data from weatherapi.com every 30 seconds.
+- The data is sent to Azure Event Hubs.
+- Azure Stream Analytics processes the data in real-time.
+- Power BI visualizes the processed data on interactive dashboards.
+
+## Technologies Used
+- Prgramming Language: Python
+- Cloud: Azure
+- Azure Service: Azure Function, Azure Eventhubs, Azure Stream Analytics, Azure Key Vault, PowerBI
+
+## Architecture
+
+
+1. **Azure Functions**
+  - Purpose: To fetch weather details from [weatherapi.com](weatherapi.com) every 30 seconds.
+  - Process:
+      - The Azure Function is triggered on a timer (every 30 seconds).
+      - It retrieves the weather data from the API.
+      - The fetched data is sent to Azure Event Hubs for further processing.
+
+2. **Azure Event Hubs**
+  - Purpose: Acts as a message broker to receive and store the data sent by Azure Functions.
+  - Process:
+      - Receives the weather data from Azure Functions.
+      - Streams the data to Azure Stream Analytics for real-time analysis.
+
+3. **Azure Stream Analytics**
+  - Purpose: Processes the weather data in real-time.
+  - Process:
+      - Reads data from Azure Event Hubs.
+      - Performs transformations and computations on the incoming data.
+      - Sends the processed data to Power BI for visualization.
+        
+4. **Power BI**
+  - Purpose: Provides an interactive dashboard for visualizing the live weather data.
+  - Process:
+      - Displays metrics such as temperature, humidity, wind speed, and direction.
+      - Automatically refreshes to reflect the latest data.
