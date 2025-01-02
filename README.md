@@ -40,7 +40,7 @@ This project is designed to provide nearly live updates on weather conditions su
       - Sends the processed data to Power BI for visualization.
         
 4. **Azure Key Vault**
-   - purpose: To store the API Key/secret creds
+- purpose: To store the API Key/secret creds
         
 4. **Power BI**
   - Purpose: Provides an interactive dashboard for visualizing the live weather data.
